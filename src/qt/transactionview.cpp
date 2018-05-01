@@ -107,13 +107,13 @@ TransactionView::TransactionView(QWidget* parent) : QWidget(parent), model(0), t
 
     addressWidget = new QLineEdit(this);
 #if QT_VERSION >= 0x040700
-    addressWidget->setPlaceholderText(tr("Enter address or label to search"));
+    addressWidget->setPlainText(tr("Enter address or label to search"));
 #endif
     hlayout->addWidget(addressWidget);
 
     amountWidget = new QLineEdit(this);
 #if QT_VERSION >= 0x040700
-    amountWidget->setPlaceholderText(tr("Min amount"));
+    amountWidget->setPlainText(tr("Min amount"));
 #endif
 #ifdef Q_OS_MAC
     amountWidget->setFixedWidth(97);
