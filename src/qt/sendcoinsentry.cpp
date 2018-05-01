@@ -29,7 +29,7 @@ SendCoinsEntry::SendCoinsEntry(QWidget* parent) : QStackedWidget(parent),
     ui->payToLayout->setSpacing(4);
 #endif
 #if QT_VERSION >= 0x040700
-    ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
+    ui->addAsLabel->setPlainText(tr("Enter a label for this address to add it to your address book"));
 #endif
 
     // normal shekel address field
